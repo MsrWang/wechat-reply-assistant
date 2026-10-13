@@ -1,0 +1,6 @@
+rapidocr-onnxruntime>=1.4,<2
+numpy
+windows-capture
+PySide6-Fluent-Widgets
+pillow
+

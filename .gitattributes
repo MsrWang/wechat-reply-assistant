@@ -1,0 +1,3 @@
+# Preserve byte-exact locks and the historical evaluation fixture on all OSes.
+requirements*.lock -text
+scripts/fixtures/*.py.txt -text

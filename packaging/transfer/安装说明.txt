@@ -1,0 +1,14 @@
+Jev Chat Assistant 0.1.2 安装说明
+
+1. 已验证的平台是 Windows 11 x64 和 WeChat Windows 4.x；其他环境尚未验证。
+2. 在 Windows Defender 中先扫描收到的 ZIP 或完整解压目录；发现威胁时不要安装。
+3. 将 ZIP 和同名 .sha256.txt 旁车文件放在同一目录，在该目录打开 PowerShell，执行：
+   Get-FileHash -Algorithm SHA256 .\Jev-Chat-Assistant-0.1.2-win-x64.zip
+   将输出的 SHA256 与 Jev-Chat-Assistant-0.1.2-win-x64.zip.sha256.txt 第一列核对。该哈希只用于检查传输、下载或存储损坏；ZIP 与旁车可能一起被替换，它不是代码签名，也不能单独证明发布者身份。
+4. 将 ZIP 完整解压到本地磁盘；不要从 ZIP、邮件预览、网盘预览或 U 盘直接运行。
+5. 双击解压目录中的 Install-Jev.cmd，核对显示的 0.1.2 版本及清单摘要；确认扫描完成且结果正常后，精确输入 INSTALL 才会安装。
+6. 安装完成后，从桌面的 Jev Chat Assistant 快捷方式启动。
+7. 在新电脑上重新填写并保存自己的 OpenRouter Key。程序包不包含当前电脑的 Key、配置、聊天或分析数据。
+8. SmartScreen 可能显示“未知发布者”，因为当前没有代码签名。请核对文件来源、扫描结果和哈希，不确定时停止。
+9. 如果 Defender 报警、哈希或清单校验失败、安装结果不明确，停止使用并保留错误信息，不要反复尝试。
+10. 卸载时先退出程序；按需在程序内忘记 OpenRouter Key，再手动删除桌面快捷方式和 %LOCALAPPDATA%\JevChatPersonal。
